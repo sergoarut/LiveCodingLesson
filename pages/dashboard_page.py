@@ -8,8 +8,8 @@ class DashboardPage(BasePage):
 
     PAGE_URL = Links.DASHBOARD_PAGE
 
-    MY_INFO_BATTON = ('xpath', '//span[text()="My Info"]')
+    MY_INFO_BUTTON = ("xpath", "//span[text()='My Info']")
 
-    @allure.step("Click on 'My info' link")
+    @allure.step("Click on 'My Info' link")
     def click_my_info_link(self):
-        self.wait.until(EC.element_to_be_clickable(self.MY_INFO_BATTON)).click()
+        self.wait.until(EC.element_to_be_clickable(self.MY_INFO_BUTTON)).click()
